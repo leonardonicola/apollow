@@ -59,7 +59,7 @@ const Book = objectType({
 export const schema = makeSchema({
   types: [Book, Author, Query, DateTime],
   outputs: {
-    typegen: join(__dirname, '..', 'nexus-typegen.ts'), // 2
+    typegen: join(__dirname, 'generated/nexus-typegen.ts'), // 2
     schema: join(__dirname, '..', 'schema.graphql'), // 3
   },
   contextType: {
